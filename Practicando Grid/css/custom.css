@@ -1,0 +1,153 @@
+
+/* Ejercicio 1 */
+#grid1 {
+    
+    grid-template-columns: repeat(3,auto);
+}
+
+/* Ejercicio 2 - espacio entre elementos es 1rem */
+#grid2 {
+    grid-template-rows: repeat(2,auto);
+    grid-gap: 3%;
+    grid-auto-flow: column;
+}
+
+/* Ejercicio 3 */
+#grid3 {
+    grid-template-rows: repeat(2,auto);
+    grid-auto-flow: column;
+
+}
+
+#grid3 .area2 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#grid3 .area6 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+/* Ejercicio 4 - Los section tienen 80px de altura y espacio 0.5rem entre elementos */
+#grid4 {
+    padding-top: 5%;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3, 25%);
+    align-content: center;
+    grid-gap: 2%;
+}
+
+/* Ejercicio 5 - Hay que nombrar áreas (con la letra que tienen), las filas miden 80px y usar un espacio de 1 rem entre elementos*/
+#grid5{
+    padding-top: 5%;
+    grid-template-rows: repeat(3, 25%);
+    align-content: center;
+    grid-gap: 2%;
+}
+#grid5 .area2 {
+    grid-column: 3;
+    grid-row: 1 /span 2;
+}
+#grid5 .area1 {
+    grid-column: 1/span 2 ;
+}
+/* Ejercicio 6 - Usar áreas con letras y espacio de 0.8rem */
+#grid6{
+    grid-gap: 3%;
+}
+#grid6 .area1{
+    grid-column: 1/ span 2;
+}
+#grid6 .area2{
+    grid-column: 3/ span 2;
+}
+#grid6 .area4{
+    grid-column: 2/ span 3;
+}
+#grid6 .area5{
+    grid-column:  span 4;
+}
+/* Ejercicio 7 - Usar áreas con nombres de letras. Filas de 70px y columnas de 80px. */
+#grid7{
+    grid-template-columns: repeat(4, 15%);
+    grid-template-rows: repeat(2, 25%);
+    grid-gap: 3%;
+    justify-content: end;
+    align-content: end;
+}
+#grid7 .area1{
+    grid-column: 1/ span 2;
+}
+#grid7 .area2{
+    grid-column: 3;
+    grid-row: span 2;
+}
+#grid7 .area5{
+    grid-column: 4;
+    grid-row: 1/ span 2;
+}
+/* Ejercicio 8 - Deducir número de filas y columnas para que se ajuste al diseño */
+#grid8{
+    grid-template-rows: 20%  60% 20%;
+    grid-gap: 2%;
+}
+#grid8 .area1{
+    grid-column: 2/ span 2;
+}
+#grid8 .area3{
+    grid-column: 2/ span 2;
+}
+#grid8 .area4{
+    grid-column: span 3;
+}
+/* Ejercicio 9 - Espacio entre elementos de 0.5rem */
+#grid9{
+    grid-template-rows: 30%  70% ;
+    grid-gap:  0.5rem;
+}
+#grid9 .area2{
+    grid-column: 2;
+}
+#grid9 .area4{
+    grid-gap:  0.5rem;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 45% 45%;
+        align-items: stretch;
+}
+#grid9 .area4 .area41{
+  background-color: darkslategrey;
+  grid-column: 1/ span 2;
+}
+#grid9 .area4 .area42{
+    background-color: darkslategrey;
+  }
+#grid9 .area4 .area43{
+    background-color: darkslategrey;
+}
+/* Ejercicio 10 - Filas de 70px y columnas de 80px. No se puede definir un espacio entre elementos concreto */
+#grid10{
+    grid-gap: 10%;
+}
+#grid10 .area1{
+grid-column: 1/ span 3;
+}
+#grid10 .area2{
+    grid-row: 2/ span 2;
+}
+#grid10 .area3{
+    grid-row: 2;
+    grid-column: 2/ span 2;
+}
+/* Ejercicio 11 - Tienen que distribuirse los paneles como en el diseño. */
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+main article{
+    margin: 20pX;
+    width: 300PX;
+}

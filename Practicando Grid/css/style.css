@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+header{
+    padding: 2rem;
+}
+
+header h1{
+    margin: 0px;
+}
+
+article{
+    display: grid;
+
+    padding: 1em;
+    margin-bottom: 1.5em;
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+section{
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: white;
+    font-size: 2rem;
+}
+
+
